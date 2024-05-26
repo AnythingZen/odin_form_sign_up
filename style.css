@@ -1,0 +1,104 @@
+:root {
+    font-family: "Norse Bold";
+
+    box-sizing: border-box;
+}
+
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+}
+
+.leftside {
+    width: 30%;
+    height: 100%;
+
+    overflow: hidden;
+    flex: 4;
+
+    position: relative;
+}
+
+.leftside>img {
+    object-fit: contain;
+}
+
+.banner {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    position: absolute;
+    top: 20%;
+
+    background-color: rgba(0, 0, 0, 0.445);
+
+}
+
+.banner>img {
+    width: 20%;
+}
+
+.banner>h1 {
+    font-size: 40px;
+}
+
+.rightside {
+    height: 100%;
+    padding-left: 30px;
+    flex: 6;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(247, 246, 246);
+}
+
+.CTA {
+    font-weight: 600;
+}
+
+.CTA>p:nth-child(1) {
+    margin-top: 10vh;
+    text-align: left;
+
+    font-size: 25px;
+
+}
+
+.CTA>p:nth-child(2) {
+    font-size: 25px;
+    padding: 15px 0px;
+}
+
+.form-container {
+    background-color: white;
+    box-shadow: 0 2px 5px rgb(163, 163, 163);
+    margin: 30px 0;
+
+    width: calc(100% + 30px);
+    margin-left: -30px;
+
+    padding: 30px 0px 30px 30px;
+}
+
+.form-container>div>span {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name, .contact, .pass {
+    display: flex;
+}

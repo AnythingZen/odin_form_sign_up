@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="leftside">
+             <div class="banner">
+                <img src="assets/odin-lined.png" alt="Logo">
+                <h1>ODIN</h1>
+             </div>
+             <img src="assets/space.jpg" alt="logo background">
+        </div>
+        <div class="rightside">
+            <div class="CTA">
+                <p>
+                    I fear not the man who has practiced 10,000 kicks once, 
+                    <br>but I fear the man who has practiced one kick 10,000 times.</br> 
+                    <br>Sign up <i>now</i> to get started.</br>
+                </p>
+                <p>
+                    You <i>know</i> you want to.
+                </p>
+            </div>
+
+            <div class="form-container">
+                <div>
+                    <span>Let's do this!</span>
+                </div>
+
+                <form action="" method="post" id="authentication">
+                    <div class="name">
+                        <p>
+                            <label for="first_name">
+                              <span>FIRST NAME</span>
+                              <strong><span aria-label="required">*</span></strong>
+                            </label>
+                            <input type="text" name="firstname" id="first_name" required />
+                        </p>
+
+                        <p>
+                            <label for="last_name">
+                                <span>LAST NAME</span>
+                                <strong><span aria-label="required">*</span></strong>
+                            </label>
+                            <input type="text" name="lastname" id="last_name" required>
+                        </p>
+                    </div>
+
+                    <div class="contact">
+
+                        <p>
+                            <label for="mail">
+                                <span>EMAIL</span>
+                                <strong><span aria-label="required">*</span></strong>
+                            </label>
+                            <input type="email" name="email" id="mail" required>
+                        </p>
+
+                        <p>
+                            <label for="num">
+                                <span>PHONE NUMBER</span>
+                                <strong><span arial-label="required">*</span></strong>
+                            </label>
+                            <input
+                             type="text"
+                             name="num"
+                             id="num"
+                             pattern="[0-9]*"
+                             required>
+                        </p>
+
+                    </div>
+
+                    <div class="pass">
+
+                        <p>
+                            <label for="pass">
+                                <span>PASSWORD</span>
+                                <strong><span arial-label="required">*</span></strong>
+                            </label>
+                            <input type="password" name="pass" id="pass" required>
+                        </p>
+
+                        <p>
+                            <label for="confirmPass">
+                                <span>CONFIRM PASSWORD</span>
+                                <strong><span arial-label="required">*</span></strong>
+                            </label>
+                            <input type="password" name="confirmPass" id="confirmPass" required>
+                        </p>
+                        
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="final-section">
+                <button type="submit" form="authentication">
+                    Create Account
+                </button>
+                <span>Already have an account? <a href="#">Log in</a></span>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
