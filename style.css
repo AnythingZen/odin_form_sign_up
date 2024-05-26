@@ -23,7 +23,7 @@
 }
 
 .leftside>img {
-    object-fit: contain;
+    height: 100%;
 }
 
 .banner {
@@ -101,4 +101,57 @@ form {
 
 .name, .contact, .pass {
     display: flex;
+    gap: 10vw;
+}
+
+form>div>p {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 12px;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 2px 2px 5px rgb(163, 163, 163);
+}
+
+#pass:invalid, #confirmPass:invalid {
+    border: 1px solid red;
+}
+
+.final-section {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+
+    border-radius: 8px;
+    padding: 10px 50px;
+
+    background-color: #596D48;
+    border: 1px solid #596D48;
+    box-shadow: 2px 2px 5px rgb(163, 163, 163);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.final-section>span {
+    padding-top: 30px;
+}
+
+.final-section>span>a {
+    text-decoration: none;
+    color: #596D48;
 }

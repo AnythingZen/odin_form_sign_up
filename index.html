@@ -85,7 +85,13 @@
                                 <span>PASSWORD</span>
                                 <strong><span arial-label="required">*</span></strong>
                             </label>
-                            <input type="password" name="pass" id="pass" required>
+                            <input
+                             type="password" 
+                             name="pass" 
+                             id="pass" 
+                             onkeyup="validate_password()" 
+                             required>
+                            <span id="wrongPass"></span>
                         </p>
 
                         <p>
@@ -93,18 +99,25 @@
                                 <span>CONFIRM PASSWORD</span>
                                 <strong><span arial-label="required">*</span></strong>
                             </label>
-                            <input type="password" name="confirmPass" id="confirmPass" required>
+                            <input
+                             type="password" 
+                             name="confirmPass" 
+                             id="confirmPass"
+                             onkeyup="validate_password()" 
+                             required>
                         </p>
-                        
+
                     </div>
 
                 </form>
             </div>
 
             <div class="final-section">
-                <button type="submit" form="authentication">
-                    Create Account
-                </button>
+                <div>
+                    <button type="submit" form="authentication">
+                        Create Account
+                    </button>
+                </div>
                 <span>Already have an account? <a href="#">Log in</a></span>
             </div>
         </div>
